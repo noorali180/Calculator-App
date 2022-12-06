@@ -13,3 +13,47 @@ body{
     background-image: linear-gradient(to right, red, blue);
 }
 
+.btn{
+    outline: none;
+    border: .1px solid #fff;
+    padding: 18px;
+
+    font-size: 18px;
+    font-weight: 700;
+    color:rgba(0, 0, 0, .75);
+    background-color: rgba(225, 225, 225, .75);
+
+    cursor: pointer;
+}
+
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.screen{
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, .75);
+    padding: 10px 8px;
+    text-align: right;
+}
+
+.operand--1{
+    color:rgba(225, 225, 225, .75);
+    font-size: 18px;
+}
+.operand--2{
+    color:rgba(225, 225, 225, .95);
+    align-self: bottom;
+    font-size: 30px;
+}
+
+.btn-allclear,
+.btn-result{
+    grid-column: span 2;
+}
+
+
