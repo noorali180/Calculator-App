@@ -7,35 +7,38 @@
 
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="./styles/style.css">
-
-    
+        
+    <!-- google fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Varela+Round&display=swap');
+    </style>
 
     <title>📱 &mdash; Calculator App</title>
 </head>
 <body>
     <main class="calculator">
         <div class="screen">
-            <div class="operand--1">123</div>
-            <div class="operand--2">456</div>
+            <div data-previous-operand class="operand--previous"></div>
+            <div data-current-operand class="operand--current"></div>
         </div>
-        <button class="btn btn-allclear">AC</button>
-        <button class="btn btn-del">DEL</button>
-        <button class="btn btn-operator">/</button>
-        <button class="btn btn-number" data-number="1">1</button>
-        <button class="btn btn-number" data-number="2">2</button>
-        <button class="btn btn-number" data-number="3">3</button>
-        <button class="btn btn-operator">*</button>
-        <button class="btn btn-number" data-number="4">4</button>
-        <button class="btn btn-number" data-number="5">5</button>
-        <button class="btn btn-number" data-number="6">6</button>
-        <button class="btn btn-operator">+</button>
-        <button class="btn btn-number" data-number="7">7</button>
-        <button class="btn btn-number" data-number="8">8</button>
-        <button class="btn btn-number" data-number="9">9</button>
-        <button class="btn btn-operator">-</button>
-        <button class="btn btn-dot">.</button>
-        <button class="btn btn-number" data-number="0">0</button>
-        <button class="btn btn-result">=</button>
+        <button data-all-clear class="span-two">AC</button>
+        <button data-delete >DEL</button>
+        <button data-operation >÷</button>
+        <button data-number >1</button>
+        <button data-number >2</button>
+        <button data-number >3</button>
+        <button data-operation >×</button>
+        <button data-number >4</button>
+        <button data-number >5</button>
+        <button data-number >6</button>
+        <button data-operation >+</button>
+        <button data-number >7</button>
+        <button data-number >8</button>
+        <button data-number >9</button>
+        <button data-operation >-</button>
+        <button data-number >.</button>
+        <button data-number >0</button>
+        <button data-equal class="span-two">=</button>
     </main>
 
     <!-- JS Scripts -->
