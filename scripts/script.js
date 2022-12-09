@@ -104,10 +104,10 @@ class Calculator {
 
     // function to update the output display...
     updateDisplay(){
-        this.currentOperandElement.innerText = this.currentOperand.toString()
+        this.currentOperandElement.innerText = this.currentOperand.toString();
 
         if(this.operation !== undefined){
-            this.previousOperandElement.innerText = `${this.previousOperand.toString()} ${this.operation.toString()}`
+            this.previousOperandElement.innerText = `${this.previousOperand.toString()} ${this.operation.toString()}`; 
         }
         else{
             this.previousOperandElement.innerText = '';
